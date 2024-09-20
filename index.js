@@ -30,6 +30,7 @@ app.post("/api/count", async (req, res) => {
   res.send({
     code: 0,
     data: await Counter.count(),
+    testInfo: 'hello world'
   });
 });
 
@@ -39,6 +40,7 @@ app.get("/api/count", async (req, res) => {
   res.send({
     code: 0,
     data: result,
+    testInfo: 'hello world'
   });
 });
 
